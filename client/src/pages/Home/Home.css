@@ -1,0 +1,11 @@
+.post {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ margin: 2%;
+ padding: 5%;
+}
+.postDetails {
+ padding: 4%;
+}
