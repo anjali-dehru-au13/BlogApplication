@@ -5,13 +5,16 @@ header {
  justify-content: space-between;
  align-items: center;
  padding: 1%;
- background: rgb(225, 219, 246);
- background: linear-gradient(
-  245deg,
-  rgba(225, 219, 246, 1) 0%,
-  rgba(210, 232, 236, 1) 100%
- );
+ background: rgb(193, 192, 216);
+ /* background: radial-gradient(
+  circle,
+  rgba(255, 169, 216, 1) 53%,
+  rgba(215, 164, 198, 1) 100%
+ ); */
  height: 9vh;
+}
+.header div {
+ width: 100%;
 }
 ul {
  display: flex;
@@ -31,13 +34,13 @@ nav {
  align-items: center;
 }
 .loginButton {
- background: rgb(144, 143, 224);
+ background: rgb(166, 144, 185);
  border: none;
  color: white;
  padding: 10px 20px;
  text-align: center;
  text-decoration: none;
- border-radius: 10px;
+ border-radius: 1px;
  /* display: inline-block; */
  font-size: 20px;
  margin: 4px 2px;
@@ -45,8 +48,8 @@ nav {
  -webkit-transition-duration: 0.4s; /* Safari */
  transition-duration: 0.4s;
  &:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-   0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 5px 12px 8px 8px rgba(107, 81, 119, 0.24),
+   0px 6px 8px 0px rgba(147, 2, 135, 0.237);
  }
 }
 

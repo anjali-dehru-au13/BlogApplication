@@ -1,11 +1,16 @@
 import React from "react";
 import logo from "../assets/logo1.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
  return (
   <main>
    <header className="header">
-    <img src={logo} slt="logo_here" width={"5%"} />
+    <div>
+     <Link to="/">
+      <img src={logo} slt="logo_here" width="5%" />
+     </Link>
+    </div>
     <nav>
      {/* <ul className="menu-items">
      <li>
