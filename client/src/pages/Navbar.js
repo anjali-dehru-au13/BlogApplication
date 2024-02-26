@@ -1,17 +1,23 @@
 import React from "react";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo1.svg";
 
 const Navbar = () => {
  return (
   <header className="header">
-   <div className="logo">
-    <img src={logo} alt="logo-ramen-bowl" width={"10%"}/>
-   </div>
-   <div className="menu">
-    <nav className="menu-items">
-     <a href="">Login</a>
-    </nav>
-   </div>
+   <img src={logo} slt="logo_here" width={"5%"} />
+   <nav>
+    {/* <ul className="menu-items">
+     <li>
+      <a href="/">Home</a>
+     </li>
+     <li>
+      <a href="/posts">Posts</a>
+     </li>
+    </ul> */}
+    <div style={{}}>
+     <button className="loginButton">Login</button>
+    </div>
+   </nav>
   </header>
  );
 };
