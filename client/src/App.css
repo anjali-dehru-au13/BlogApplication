@@ -13,8 +13,8 @@ header {
  ); */
  height: 9vh;
 }
-.header div {
- width: 100%;
+.logoDiv {
+ width: 82%;
 }
 ul {
  display: flex;
@@ -30,29 +30,37 @@ ul li {
 }
 nav {
  display: flex;
- justify-content: space-between;
+ justify-content: space-around;
  align-items: center;
+ width: 18%;
+ &:last-child {
+  margin-left: 15%;
+  margin-right: 2%;
+ }
 }
 .loginButton {
  background: rgb(166, 144, 185);
  border: none;
  color: white;
- padding: 10px 20px;
- text-align: center;
+ padding: 8px 15px;
+ /* text-align: center; */
  text-decoration: none;
  border-radius: 1px;
- /* display: inline-block; */
+ display: inline-block;
  font-size: 20px;
- margin: 4px 2px;
- /* cursor: -moz-zoom-in(2px); */
+ /* margin: 4px 2px; */
  -webkit-transition-duration: 0.4s; /* Safari */
  transition-duration: 0.4s;
  &:hover {
   box-shadow: 5px 12px 8px 8px rgba(107, 81, 119, 0.24),
    0px 6px 8px 0px rgba(147, 2, 135, 0.237);
  }
+ border-radius: 8px;
 }
 
+.ButtonContainer {
+ width: fit-content;
+}
 @media (max-width: 720px) {
 }
 /* @media (prefers-reduced-motion: no-preference) {
