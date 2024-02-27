@@ -6,7 +6,7 @@ const Navbar = () => {
  return (
   <main>
    <header className="header">
-    <div>
+    <div className="logoDiv">
      <Link to="/">
       <img src={logo} slt="logo_here" width="5%" />
      </Link>
@@ -19,9 +19,17 @@ const Navbar = () => {
      <li>
       <a href="/posts">Posts</a>
      </li>
+     
     </ul> */}
-     <div style={{}}>
-      <button className="loginButton">Login</button>
+     <div className="ButtonContainer">
+      <Link to="login">
+       <button className="loginButton">Login</button>
+      </Link>
+     </div>
+     <div className="ButtonContainer">
+      <Link to="/register">
+       <button className="loginButton">Sign Up</button>
+      </Link>
      </div>
     </nav>
    </header>
