@@ -1,4 +1,5 @@
-header {
+* {
+ box-sizing: border-box;
 }
 .header {
  display: flex;
@@ -52,8 +53,7 @@ nav {
  -webkit-transition-duration: 0.4s; /* Safari */
  transition-duration: 0.4s;
  &:hover {
-  box-shadow: 5px 12px 8px 8px rgba(107, 81, 119, 0.24),
-   0px 6px 8px 0px rgba(147, 2, 135, 0.237);
+  background-color: rgb(204, 180, 224);
  }
  border-radius: 8px;
 }
@@ -77,3 +77,34 @@ nav {
     transform: rotate(360deg);
   }
 } */
+
+/* Login Page CSS */
+
+form.login,
+form.register {
+ max-width: 400px;
+ margin: 8% auto;
+ text-align: center;
+}
+input {
+ display: block;
+ margin-bottom: 4%;
+ width: 100%;
+ border: none;
+ border: 2px solid #ddd;
+ background-color: #fff;
+ padding: 2% 4%;
+}
+
+button {
+ width: 100%;
+ background-color: #4e4b4b;
+ color: #fff;
+ padding: 2%;
+ border: none;
+ border-radius: 5px;
+ font-size: 1.2rem;
+ &:hover {
+  background-color: #919191;
+ }
+}
