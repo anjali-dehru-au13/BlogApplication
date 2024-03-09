@@ -1,14 +1,14 @@
 import React from "react";
-import logo from "../assets/logo1.svg";
+import logo from "../../assets/logo1.svg";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Header = () => {
  return (
   <main>
    <header className="header">
     <div className="logoDiv">
      <Link to="/">
-      <img src={logo} slt="logo_here" width="5%" />
+      <img src={logo} slt="logo_here" className="logoImage" />
      </Link>
     </div>
     <nav>
@@ -22,13 +22,13 @@ const Navbar = () => {
      
     </ul> */}
      <div className="ButtonContainer">
-      <Link to="login">
-       <button className="loginButton">Login</button>
+      <Link to="posts">
+       <h4 className="navLink">Blogs</h4>
       </Link>
      </div>
      <div className="ButtonContainer">
       <Link to="/register">
-       <button className="loginButton">Sign Up</button>
+       <h4 className="navLink">Sign Up</h4>
       </Link>
      </div>
     </nav>
@@ -37,4 +37,4 @@ const Navbar = () => {
  );
 };
 
-export default Navbar;
+export default Header;
