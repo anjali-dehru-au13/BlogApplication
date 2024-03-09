@@ -1,0 +1,21 @@
+.FirstDiv {
+ height: 80vh;
+ overflow: hidden;
+ background: url("../../assets/bgMain.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.titleText {
+ font-size: 2rem;
+ font-weight: bold;
+ color: #aaa8a8;
+ padding: 2%;
+}
+.subText {
+ font-size: 1.2rem;
+}
