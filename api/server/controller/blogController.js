@@ -11,11 +11,15 @@ const fetchListOfBlogs = async (req, res) => {
  try {
   blogList = await Post.find();
  } catch (err) {
-  console.log(err);
+  statusCode = err?.code || 500;
+  response.status = false;
+  response.message = err?.message || "Network Error!";
+  response.error = err;
  }
  if (!blogList) {
   return res.status(404).json({ message: "No Blogs Found" });
  }
+
  return res.status(200).json({ blogList });
 };
 
