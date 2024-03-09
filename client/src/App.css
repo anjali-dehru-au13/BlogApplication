@@ -94,11 +94,23 @@ nav {
 
 /* Login Page CSS */
 
+.formWrapperDiv {
+ text-align: center;
+ display: flex;
+ padding: 7% 12%;
+ justify-content: center;
+ background: radial-gradient(
+  circle,
+  rgb(115, 115, 117) 25%,
+  rgb(209, 214, 217) 100%
+ );
+}
 form.login,
 form.register {
- max-width: 400px;
- margin: 8% auto;
- text-align: center;
+ max-width: 100%;
+ width: 40%;
+ color: #fff;
+ /* margin: 8% 1auto; */
 }
 input {
  display: block;
@@ -108,18 +120,22 @@ input {
  border: 2px solid #ddd;
  background-color: #fff;
  padding: 2% 4%;
+ border-radius: 15px;
 }
 
 button {
  width: 100%;
- background-color: #4e4b4b;
+ background-color: #403d3d;
  color: #fff;
  padding: 2%;
  border: none;
- border-radius: 5px;
+ border-radius: 10px;
  font-size: 1.2rem;
  &:hover {
   background-color: #919191;
+ }
+ &:disabled {
+  background-color: #9a9797;
  }
 }
 
