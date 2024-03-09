@@ -1,6 +1,14 @@
 * {
  box-sizing: border-box;
 }
+.App {
+ background: radial-gradient(
+  circle,
+  rgb(115, 115, 117) 25%,
+  rgb(209, 214, 217) 100%
+ );
+ background-repeat: repeat-y;
+}
 .header {
  display: flex;
  justify-content: space-between;
@@ -99,30 +107,31 @@ nav {
  display: flex;
  padding: 7% 12%;
  justify-content: center;
- background: radial-gradient(
-  circle,
-  rgb(115, 115, 117) 25%,
-  rgb(209, 214, 217) 100%
- );
 }
 form.login,
 form.register {
  max-width: 100%;
  width: 40%;
- color: #fff;
- /* margin: 8% 1auto; */
+ color: #000;
+ border: 1px solid #fff;
+ padding: 2% 8% 4%;
+ background-color: #fff;
+ border-radius: 25px;
 }
 input {
  display: block;
- margin-bottom: 4%;
+ margin-bottom: 10%;
  width: 100%;
  border: none;
  border: 2px solid #ddd;
  background-color: #fff;
  padding: 2% 4%;
- border-radius: 15px;
+ border-radius: 8px;
 }
-
+.login,
+.register {
+ margin-top: 6%;
+}
 button {
  width: 100%;
  background-color: #403d3d;
