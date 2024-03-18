@@ -5,24 +5,25 @@ import { Link } from "react-router-dom";
 const Header = () => {
  return (
   <main>
-   <header className="header">
-    <div className="logoDiv">
-     <Link to="/">
-      {/* <img src={logo} slt="logo_here" className="logoImage" fill="white" /> */}
-      <p className="navLink"> Logo Here</p>
-     </Link>
-    </div>
-    <nav>
-     <div className="ButtonContainer">
-      <Link to="posts">
-       <h4 className="navLink">Blogs</h4>
+   <header className="flex flex-row backdrop-brightness-75 backdrop-opacity-80 fixed top-0 left-0 right-0 py-4 ">
+    <Link to="/" className="flex basis-1/2 ">
+     {/* <img src={logo} slt="logo_here" className="logoImage" fill="white" /> */}
+     <h2 className="text-white space-x-2 font-bold  px-4 py-2 text-xl ">
+      {" "}
+      Logo Here
+     </h2>
+    </Link>
+    <nav className="flex basis-1/3 justify-end space-x-5">
+     {[
+      ["Blogs", "/posts"],
+      ["Login", "/login"],
+     ].map(([title, url]) => (
+      <Link to={url}>
+       <h3 className=" text-xl rounded-lg px-4 py-2 text-white hover:bg-slate-100 hover:text-slate-900 ">
+        {title}
+       </h3>
       </Link>
-     </div>
-     {/* <div className="ButtonContainer">
-      <Link to="/register">
-       <h4 className="navLink">Sign Up</h4>
-      </Link>
-     </div> */}
+     ))}
     </nav>
    </header>
   </main>
