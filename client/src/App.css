@@ -2,12 +2,12 @@
  box-sizing: border-box;
 }
 .App {
- background: radial-gradient(
+ /* background: radial-gradient(
   circle,
   rgb(115, 115, 117) 25%,
   rgb(209, 214, 217) 100%
- );
- background-repeat: repeat-y;
+ ); */
+ /* background-repeat: repeat-y; */
 }
 .header {
  display: flex;
@@ -22,6 +22,7 @@
   rgb(162, 177, 204) 25%,
   rgb(108, 153, 182) 100%
  ); */
+ background: transparent;
  height: 9vh;
 }
 .logoDiv {
@@ -53,7 +54,7 @@ nav {
 }
 .navLink {
  border: none;
- color: black;
+ color: #fff;
  padding: 8px;
  text-decoration: none;
  /* border-radius: 1px; */
@@ -83,7 +84,7 @@ nav {
  }
 }
 .logoImage {
- width: 50px;
+ width: 100px;
 }
 /* @media (prefers-reduced-motion: no-preference) {
  .App-logo {

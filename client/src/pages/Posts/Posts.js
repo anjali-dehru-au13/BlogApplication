@@ -4,7 +4,6 @@ import "./Posts.css";
 import axios from "axios";
 const Posts = () => {
  const [posts, setPosts] = useState({});
-
  const [pending, setPending] = useState(true);
  async function fetchListOfBlogs() {
   const response = await axios.get("http://localhost:5000/api/blogs");
@@ -37,7 +36,7 @@ const Posts = () => {
         </div>
         <div className="blogDetails">
          <h2 className="title"> {post?.title}</h2>
-         <p style={{}}>
+         <p>
           <time>{post?.createdAt}</time>
          </p>
          <p>{post?.description}</p>
