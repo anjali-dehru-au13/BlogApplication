@@ -150,6 +150,7 @@ button {
 }
 
 .footerDiv {
- padding: 8%;
- /* margin: 2%; */
+ padding: 2%;
+ margin-top: 4%;
+ background: #9a9797;
 }
